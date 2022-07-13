@@ -1,0 +1,257 @@
+// Small Sreen Tablet
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        padding: 0 20px !important;
+        bottom: 0;
+        width: 90vw;
+        height: 3.8rem;
+        margin: 0 50px 14px 50px;
+        border-radius: 40px;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+
+        .navbar-nav {
+            justify-content: space-around;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+
+        .nav-link {
+            padding: 0 !important;
+        }
+
+        ul li {
+            margin: 0 !important;
+            margin-bottom: 8px !important;
+
+            i {
+                font-size: 26px !important;
+            }
+
+            span {
+                display: none;
+            }
+
+            .active,
+            :focus {
+                i {
+                    color: var(--danger) !important;
+                    // outline: 6px solid var(--secondary) !important;
+                    border-radius: 50%;
+                    // text-shadow: 0 0 15px var(--danger);
+                    // background-color: white;
+                    // transform: scale(1.2) translateY(-50%);
+                }
+            }
+        }
+
+        .copy-right {
+            display: none;
+        }
+
+    }
+
+    .hero,
+    .about,
+    .portfolio, .contact {
+        margin-left: 0 !important;
+        // margin: 100px 0;
+    }
+
+    .hero {
+        .container {
+            padding: 0 !important;
+        }
+
+        .hero-detail {
+            .social-icons {
+                ul {
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .about {
+        .info {
+            padding: 0 40px !important;
+
+            ul {
+                padding-left: 0 !important;
+            }
+
+            .personal-info {
+                margin-top: 0 !important;
+                margin-bottom: 80px !important;
+            }
+        }
+    }
+
+    .portfolio {
+        .container {
+            padding: 0 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        margin: 0 40px 14px 40px;
+
+        .navbar-nav {
+            justify-content: space-around;
+        }
+    }
+
+    .hero {
+        padding: 20px !important;
+        // margin: 100px 0;
+        margin-bottom: 40px;
+
+        .hero-detail {
+            .avatar {
+                text-align: center;
+                padding: 60px 60px 40px 60px !important; 
+            }
+
+            .hero-info {
+                padding: 0 75px;
+
+                h2 {
+                    // margin-left: 28%;
+                    margin-bottom: 10%;
+                }
+            }
+
+            .social-icons {
+                padding: 0 75px;
+                // justify-content: center;
+            }
+        }
+    }
+
+    .portfolio {
+        .container {
+            padding: 0 50px;
+
+            .port-detail {
+                .title {
+                    padding: 0 !important;
+                }
+
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            padding: 0 50px;
+
+            .cont-detail {
+                .title {
+                    padding: 0 !important;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .navbar {
+        margin: 0 18px 14px 18px;
+
+        .navbar-nav {
+            justify-content: space-around;
+        }
+    }
+
+    .hero {
+
+        .hero-detail {
+            .avatar {
+                padding: 50px 50px 30px 50px !important;
+            }
+
+            .hero-info {
+                padding: 0;
+
+                h1 {
+                    font-size: 40px !important;
+                }
+
+                h2 {
+                    font-size: 18px !important;
+                    // margin-left: 15%;
+                    margin-bottom: 12%;
+                }
+
+                h5 {
+                    font-size: 16px !important;
+                }
+            }
+
+            .social-icons {
+                padding: 0;
+                ul {
+                    width: 75% !important;
+                }
+            }
+        }
+    }
+
+    .about {
+        .info {
+            padding: 0 0 !important;
+            font-size: 16px !important;
+
+            ul {
+                padding-left: 0 !important;
+            }
+
+            .personal-info {
+                margin-top: 0 !important;
+                margin-bottom: 80px !important;
+            }
+        }
+    }
+
+    .portfolio {
+        .container {
+            padding: 0 40px !important;
+
+            .port-detail {
+                .head {
+                    ul li {
+                        button {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            padding: 0 40px !important;
+        }
+    }
+}
+
+// Large Sreen Tablet/Mobile
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        top: 0;
+        width: 25rem;
+        height: 100vh;
+        padding: 0 100px !important;
+    }
+}

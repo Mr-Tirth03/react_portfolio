@@ -1,0 +1,84 @@
+// Navbar
+.navbar {
+    position: fixed;
+    background-color: var(--primary);
+    z-index: 10;
+
+    .logo {
+        letter-spacing: 5px;
+    }
+
+    ul {
+        li:nth-child(1) {
+            margin-bottom: 80px;
+        }
+
+        i {
+            font-size: 21px !important;
+        }
+    }
+
+    // Navbar Link Hover Effect
+    ul li {
+        i {
+            transition: var(--transition-all);
+            font-size: 14px;
+        }
+
+        span {
+            transition: var(--transition-all);
+        }
+
+        &:hover i {
+            opacity: 1 !important;
+        }
+
+        &:hover span {
+            opacity: 1 !important;
+            letter-spacing: 3px;
+        }
+
+        .active,
+        :focus {
+            i {
+                opacity: 1 !important;
+            }
+
+            span {
+                opacity: 1 !important;
+                letter-spacing: 3px;
+            }
+        }
+    }
+
+    // .nav-item.active,
+    // :focus {
+    //     i {
+    //         opacity: 1 !important;
+    //     }
+
+    //     span {
+    //         opacity: 1 !important;
+    //         letter-spacing: 3px;
+    //     }
+    // }
+
+
+    .copy-right {
+        margin-top: 80px;
+
+        p {
+            color: rgb(177, 177, 177);
+            letter-spacing: 1px;
+
+            span {
+                transition: var(--transition-all);
+
+                &:hover {
+                    opacity: 1 !important;
+                    letter-spacing: 2.5px;
+                }
+            }
+        }
+    }
+}

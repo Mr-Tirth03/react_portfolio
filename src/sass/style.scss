@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,500;0,600;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+@import './navbar';
+@import "./Home.scss";
+@import "./MediaQueries";
+@import "./About";
+@import "./Portfolio";
+@import "./Contact";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    --primary: #000000;
+    --secondary: #111111;
+    --danger: #ffca0c;
+    --transition-all: all 0.3s ease-in-out;
+}
+
+// Scrollbar 
+body::-webkit-scrollbar {
+    width: .4rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--danger);
+}
+
+
+body {
+    display: block;
+    background-color: var(--secondary) !important;
+    font-family: 'Mulish', sans-serif;
+}
+
+.hero, .about, .portfolio, .contact {
+    margin-left: 25rem;
+}
+
+.container {
+    padding: 0 120px;
+}
